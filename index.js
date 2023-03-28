@@ -27,7 +27,7 @@ const corsOptions = {
     }
 };
 
-app.use( cors( { corsOptions } ) );
+app.use( cors( { origin:'https://mern-apv-frontend-omega.vercel.app' } ) );
 
 app.use( "/api/veterinarios", veterinarioRoutes );
 app.use( "/api/pacientes", pacienteRoutes );
